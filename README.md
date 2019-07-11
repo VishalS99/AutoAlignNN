@@ -37,7 +37,6 @@ Create the following directory structure:
                 |- label
                 
         |- test
-        
 
   |- results
   
@@ -45,7 +44,6 @@ Create the following directory structure:
   
            |- FinalTransformedDoc
            
-
   |- templates
   
   |- uploads
