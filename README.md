@@ -27,18 +27,29 @@ The data for training contains 30 256*256 images.
 
 Create the following directory structure: 
   |-data 
+  
         |- npydata
+        
         |- train
+        
                 |- image
+                
                 |- label
+                
         |- test
+        
 
   |- results
+  
   |- static
+  
            |- FinalTransformedDoc
+           
 
   |- templates
+  
   |- uploads
+  
 
 ### Model
 
