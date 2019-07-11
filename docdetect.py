@@ -2,6 +2,7 @@ import cv2
 import numpy as np
 from skimage import exposure
 from textdeskew import textdeskew
+
 # from test import unetProcessing
 
 def convert_URL2NAME(url):
@@ -104,11 +105,12 @@ def four_point_transform(image, pts):
     return warped
 
 
-def preprocess(image):
+def preprocess(image, path):
 
     # Add 10px border to every side.
     # Done to prevent lack of edge detection
     # for documents that gets cut in the sides
+    # if(os.path.getsize(image)/1000 < 450)
     image_original = cv2.copyMakeBorder(
                     image, 
                     10, 
@@ -202,23 +204,15 @@ def detectContour(threshed):
     return screenCnt
 
 
-def main(filename):
-
-    print("[INFO] Reducing image size to (256,256)... ")
-    # compress(filename)
-
-    # Generate masks for the images
-    # unetProcessing()
+def docdetect(filename):
 
     print("[INFO] Edge Detection Operation started...\n")
-    
     path_raw = "uploads/" + filename    
     filename = filename.split('.')[0]
     path_processed = "results/" + filename + ".jpg"
 
     raw_image = cv2.imread(path_raw)
     image_original = cv2.imread(path_processed) 
-    # image_original = cv2.imread(path_processed) 
     orig = image_original
     
     print("[INFO] Finding conversion ratio ...\n")
@@ -227,7 +221,7 @@ def main(filename):
     (Hr, Wr) = (H2/H1, W2/W1)
     print("[INFO] Found ratio ... \n")
 
-    threshed = preprocess(orig)
+    threshed = preprocess(orig,raw_image)
     cv2.imwrite("FinalTransformedDoc/thresh.jpg", threshed)
 
     screenCnt = detectContour(threshed)

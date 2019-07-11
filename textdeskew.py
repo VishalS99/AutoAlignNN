@@ -2,8 +2,12 @@ import numpy as np
 import cv2
 
 def textdeskew(image):
-	# image = cv2.imread("C://Users//SarVisha//Desktop//intern//WarpAlign//files skewed//img_right_flip//img_4.jpg")
-
+	"""
+	Function that calculates a the rotation angle for documents that are 
+	already properly scanned. Using the angle, it tries to deskew. Useful in 
+	cases where there is no difference between foreground and background, and
+	the document is properly scanned. 
+	"""
 	gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 	gray = cv2.bitwise_not(gray)
 	thresh = cv2.threshold(gray, 0, 255,
