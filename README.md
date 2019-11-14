@@ -1,8 +1,9 @@
 <h1 align="center">DOCUMENT EDGE DETECTION USING U-Net ARCHITECTURE IN KERAS</h1>
 <p>
   <a href="#" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
-    <img alt="License: MIT" src="https://img.shields.io/badge/python-v3.7-blue.svg" />
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge&logo=appveyor" />
+    <img alt="Python: v3.7" src="https://img.shields.io/badge/python-v3.7-blue.svg?style=for-the-badge&logo=appveyor" />
+    <img alt="Keras: 2.3.1" src="https://img.shields.io/badge/Keras-2.3.1-orange?style=for-the-badge&logo=appveyor" />
   </a>
 </p>
 
