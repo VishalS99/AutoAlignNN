@@ -1,6 +1,12 @@
-# DOCUMENT EDGE DETECTION USING U-Net ARCHITECTURE IN KERAS, to have accurate document scanning
+<h1 align="center">DOCUMENT EDGE DETECTION USING U-Net ARCHITECTURE IN KERAS</h1>
+<p>
+  <a href="#" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+    <img alt="License: MIT" src="https://img.shields.io/badge/python-v3.7-blue.svg" />
+  </a>
+</p>
 
-The architecture was inspired by [U-Net: Convolutional Networks for Biomedical Image Segmentation](http://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/).
+> The architecture was inspired by [U-Net: Convolutional Networks for Biomedical Image Segmentation](http://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/).
 
 ---
 
@@ -117,16 +123,6 @@ The final document is saved in ```FinalTransformedDoc```.
 
 If both mask generation and edge detection should happen together, uncomment the first 3 comments under the main function.
 
-## About Keras
+## Show your support
 
-Keras is a minimalist, highly modular neural networks library, written in Python and capable of running on top of either TensorFlow or Theano. It was developed with a focus on enabling fast experimentation. Being able to go from idea to result with the least possible delay is key to doing good research.
-
-Use Keras if you need a deep learning library that:
-
-allows for easy and fast prototyping (through total modularity, minimalism, and extensibility).
-supports both convolutional networks and recurrent networks, as well as combinations of the two.
-supports arbitrary connectivity schemes (including multi-input and multi-output training).
-runs seamlessly on CPU and GPU.
-Read the documentation [Keras.io](http://keras.io/)
-
-Keras is compatible with: Python 2.7-3.5.
+Give a ⭐️ if this project helped you!
