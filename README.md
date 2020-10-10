@@ -1,7 +1,7 @@
 <h1 align="center">AutoAlignNN</h1>
 <small>A DNN (UNet) module that performs deskewing, auto-alignment and cropping of documents from an image</small>
 <br />
-/>
+
 
 <p>
   <a href="#" target="_blank">
