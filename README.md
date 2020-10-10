@@ -1,4 +1,8 @@
-<h1 align="center">DOCUMENT EDGE DETECTION USING U-Net ARCHITECTURE IN KERAS</h1>
+<h1 align="center">AutoAlignNN</h1>
+<small>A DNN (UNet) module that performs deskewing, auto-alignment and cropping of documents from an image</small>
+<br />
+/>
+
 <p>
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge&logo=appveyor" />
